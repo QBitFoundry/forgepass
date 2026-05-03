@@ -1,0 +1,1 @@
+# ForgePass - Secure Random Password Generator

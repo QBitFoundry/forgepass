@@ -1,0 +1,4 @@
+.venv
+.pytest_cache
+src/forgepass.egg-info
+__pycahce__

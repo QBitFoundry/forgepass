@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,3 +19,5 @@ jobs:
       - run: python -m build
       - name: Publish
         uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          verbose: true
