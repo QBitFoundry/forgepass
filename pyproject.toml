@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 [project.scripts]
-forgepass = "forgepass.generator:main"
+forgepass = "forgepass.password:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
