@@ -1,0 +1,25 @@
+[build-systems]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forgepass"
+version = "0.1.0"
+description = "A cryptographically secure random password generator CLI."
+authors = [
+    { name = "QBitFoundry", email = "75433298+QBitFoundry@users.noreply.github.com." }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating systems :: OS Independent",
+]
+
+[project.scripts]
+forgepass = "forgepass.generator:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
