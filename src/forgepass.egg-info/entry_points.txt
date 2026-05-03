@@ -1,0 +1,2 @@
+[console_scripts]
+forgepass = forgepass.generator:main
